@@ -1,5 +1,5 @@
 # accessify
-Automate Webpage Accessibility
+Automatic Accessibility for Low-Bandwidth Inputs
 
 ## Features
 - [x] Enable virtual mouse interaction with CSS elements
