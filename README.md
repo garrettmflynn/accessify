@@ -1,5 +1,5 @@
 # accessify
-Web Accessibility for Low-Bandwidth Inputs
+Web accessibility for low-bandwidth inputs
 
 ## Features
 - [x] Enable virtual mouse interaction with CSS elements
