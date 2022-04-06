@@ -1,7 +1,7 @@
 {
   "name": "accessify",
   "version": "0.0.0",
-  "description": "Automatic Accessibility for Low-Bandwidth Inputs",
+  "description": "Web accessibility for low-bandwidth inputs",
   "main": "src/index.js",
   "author": "Garrett Flynn <garrettmflynn@gmail.com>",
   "license": "AGPL-3.0-or-later",
