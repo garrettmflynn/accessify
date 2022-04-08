@@ -35,6 +35,6 @@
     "hightime": "0.0.0",
     "potentials": "0.0.0",
     "datastreams-api": "0.0.18",
-    "ssvep-stimuli": "0.0.1"
+    "ssvep-stimuli": "0.1.0"
   }
 }
