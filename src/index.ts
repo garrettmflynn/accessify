@@ -2,11 +2,11 @@
 // -------------------------------- CSS --------------------------------
  
 // Add hover repacement for styling
-let replaceRule = (rule, query, replacement) => {
+let replaceRule = (rule:CSSStyleRule, query:string, replacement:string) => {
     let style = ""
     if(rule.selectorText.indexOf(query) > -1){
         var regex = new RegExp(query,"g")
-        // console.log(rules[r].cssText)
+        // console.log(rule.cssText)
         var text = rule.cssText.replace(regex,replacement);
         // console.log(text)
         style = text+"\n";
@@ -21,14 +21,15 @@ export const transformCSS = () => {
         let query = ":hover"
 
         for (var i in document.styleSheets) {
-            try{
-                var rules = document.styleSheets[i].cssRules;
+            try{    
+                var rules = (document.styleSheets[i] as CSSStyleSheet).cssRules;
                 for (var r in rules) {
-                    if(rules[r].cssText && rules[r].selectorText){
-                        style += replaceRule(rules[r], query, ".hover")
-                    } else if (rules[r].cssRules){
-                        for (var r2 in rules[r].cssRules) {
-                            let mediaQuery = rules[r].cssRules[r2]
+                    const rule = rules[r]
+                    if(rule instanceof CSSStyleRule){
+                        style += replaceRule(rule, query, ".hover")
+                    } else if (rule instanceof CSSStyleSheet){ // NOTE: Test this...
+                        for (var r2 in rule.cssRules) {
+                            let mediaQuery = rule.cssRules[r2] as CSSStyleRule
                             if(mediaQuery.cssText && mediaQuery.selectorText){
                                 style += replaceRule(mediaQuery, query, ".hover")
                             }
@@ -46,4 +47,4 @@ export const transformCSS = () => {
         return globalStyle
 }
 
-export default cssTransform
+export default transformCSS

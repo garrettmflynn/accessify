@@ -1,14 +1,14 @@
 {
-  "name": "accessify",
+  "name": "hightime",
   "version": "0.0.0",
-  "description": "Web accessibility for low-bandwidth inputs",
+  "description": "High-performance time series analysis on the browser",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/src/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/brainsatplay/accessify",
+  "repository": "https://github.com/brainsatplay/hightime",
   "author": "Garrett Flynn <garrettmflynn@gmail.com>",
   "license": "AGPL-3.0-or-later",
   "scripts": {
@@ -31,10 +31,6 @@
     "rollup-plugin-typescript2": "^0.31.2"
   },
   "dependencies": {
-    "ssvep": "0.0.0",
-    "hightime": "0.0.0",
-    "potentials": "0.0.0",
-    "datastreams-api": "0.0.18",
-    "ssvep-stimuli": "0.0.1"
+    "ssvep-stimuli": "^0.0.1"
   }
 }
