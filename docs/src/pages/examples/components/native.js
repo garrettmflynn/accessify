@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 // import ReactDOM from 'react-dom'
 // import clsx from 'clsx';
-import * as ssvep from '../../../../../src/ssvep/src';
+import * as ssvep from '../../../../../src/libraries/ssvep/src';
 // import styles from '../examples.module.css'
 
 export default function NativeExample({ server }) {
