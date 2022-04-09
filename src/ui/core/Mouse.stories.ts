@@ -8,7 +8,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<Partial<MouseProps>> = (args) => new Mouse(args);
+const Template: Story<Partial<MouseProps>> = () => new Mouse();
 
 export const Default = Template.bind({});
 Default.args = {

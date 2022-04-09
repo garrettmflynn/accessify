@@ -24,17 +24,34 @@ Implement a fully on-browser web navigation system for low-bandwidth inputs (e.g
 #### Does detection work on low-spec hardware?
 - Validate detection on a Chromebook
 
-## Methods
-accessify.ui
-- accessify.ui.keyboard()
-- accessify.ui.mouse()
+## Repo Structure
+- `/src`: Source code
+    - `/libraries`: Libraries to be published separately
+    - `/core`: Core internal functions
+    - `/ui`: Standard Web Component library
+        - `/core`: **Keyboard** and **Mouse** components
+        - `/mouse`: Internal mouse components
+        - `/keyboard`: Internal keyboard components
 
-accessify.p300
-- potentials.p300(): Basic P300 Detection
-accessify.ssvep
-- hightime.fbcca(): Filter Bank Canonical Correlation Analysis (FBCCA) algorithm
-accessify.move
-- erds(): Basic Event-Related (De)Synchronization (i.e. motor imagery) algorithm
+- `/docs`: Documentation and demo site
+
+## Rough Reference
+## Classes
+### accessify.Keyboard()
+Customizable keyboard with SSVEP / P300 controls
+
+### accessify.Mouse()
+Virtual mouse
+
+## Namespaces
+### accessify.select(type)
+1. **p300:** Basic P300 Detection
+    - potentials.p300(): Basic P300 Detection
+2. **ssvep:** Basic SSVEP Detection
+    - hightime.fbcca(): Filter Bank Canonical Correlation Analysis (FBCCA) algorithm
+
+### accessify.move(type)
+1. **erd / ers:** Basic Event-Related (De)Synchronization (i.e. motor imagery) Detection
 
 ## Roadmap
 1. Implement Filter Bank Canonical Correlation Analysis (FBCCA) in **hightime**

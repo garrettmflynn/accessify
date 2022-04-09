@@ -27,6 +27,7 @@
     "mini-css-extract-plugin": "2.4.5"
   },
   "dependencies": {
+    "@rollup/plugin-commonjs": "^21.0.3",
     "datastreams-api": "0.0.18",
     "hightime": "0.0.0",
     "lit": "^2.1.2",
@@ -105,4 +106,3 @@
     ]
   }
 }
-

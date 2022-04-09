@@ -8,7 +8,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<Partial<KeyboardProps>> = (args) => new Keyboard(args);
+const Template: Story<Partial<KeyboardProps>> = () => new Keyboard();
 
 export const Default = Template.bind({});
 Default.args = {
