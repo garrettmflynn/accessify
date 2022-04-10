@@ -7,6 +7,7 @@ Implement a fully on-browser web navigation system for low-bandwidth inputs (e.g
 
 ### Features
 - [x] Enable virtual mouse interaction with CSS elements
+- [ ] Control mouse via WebGazer.js
 - [ ] Make buttons available for labeling and direct selection
 - [ ] Flash buttons for SSVEP / P300 selection
 - [ ] Accessify Chrome Extension
