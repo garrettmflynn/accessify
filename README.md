@@ -55,19 +55,21 @@ Virtual mouse
 1. **erd / ers:** Basic Event-Related (De)Synchronization (i.e. motor imagery) Detection
 
 ## Roadmap
-1. Implement Filter Bank Canonical Correlation Analysis (FBCCA) in **hightime**
-2. Test FBCCA algorithm on a single flashing stimulus
-3. Implement P300 detection in **potentials** with all the signal processing in **hightime**
-4. Test P300 detection on a single flashing stimulus
-5. Test both algorithms on various EEG devices
-6. Test both algorithms on a Chromebook
-7. Test both algorithms with multiple stimuli to discriminate from
-8. Design a navigation scheme (i.e. Web Components) that can use the algorithms to navigate a webpage
-9. Design a Chrome Extension that allows for generic web browsing
+1. Plug in Webgazer to detect where the user is looking on the screen.
+2. Implement Filter Bank Canonical Correlation Analysis (FBCCA) in **hightime**
+3. Test FBCCA algorithm on a single flashing stimulus
+4. Implement P300 detection in **potentials** with all the signal processing in **hightime**
+5. Test P300 detection on a single flashing stimulus
+6. Test both algorithms on various EEG devices
+7. Test both algorithms on a Chromebook
+8. Test both algorithms with multiple stimuli to discriminate from
+9. Design a navigation scheme (i.e. Web Components) that can use the algorithms to navigate a webpage
+10. Design a Chrome Extension that allows for generic web browsing
 
 ## Dependencies
 - [ssvep](https://github.com/brainsatplay/ssvep): Detect SSVEP on the browser
 - [potentials](https://github.com/brainsatplay/potentials): Detect ERPs on the browser
+- [webgazer](https://github.com/brownhci/WebGazer): Scalable Webcam EyeTracking Using User Interactions
 
 ### Peer Dependencies
 - [datastreams-api](https://github.com/brainsatplay/datastreams-api): Get raw data on the browser
