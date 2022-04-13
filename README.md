@@ -65,6 +65,7 @@ Virtual mouse
 8. Test both algorithms with multiple stimuli to discriminate from
 9. Design a navigation scheme (i.e. Web Components) that can use the algorithms to navigate a webpage
 10. Design a Chrome Extension that allows for generic web browsing
+11. Implement auditory BCI methods too!
 
 ## Dependencies
 - [ssvep](https://github.com/brainsatplay/ssvep): Detect SSVEP on the browser
