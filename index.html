@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+    html, body {
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    nav {
+        /* height: 50px; */
+        background: black;
+        color: white;
+        padding: 25px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    footer {
+        background: black;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        color: rgb(199, 199, 199);
+        font-size: 15px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #hero {
+        height: 500px;
+        background-position: center;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    li {
+        padding-bottom: 10px;
+    }
+
+    #hero h1 {
+        font-size: 50px;
+        margin: 0px;
+    }
+
+    #hero > div {
+        text-align: center;
+    }
+
+    .example {
+        background:rgb(250,250,250);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 35px;
+        border: 2px solid black;
+    }
+
+    .example::before {
+        content: "Example";
+        position: absolute;
+        transform: translateY(-30px);
+        background: white;
+        font-weight: bold;
+        padding: 0px 5px;
+        border-radius: 5px;
+    }
+
+</style>
+<body>
+    <nav>Accessify</nav>
+    <section id="hero">
+        <!-- <img alt="Accessify logo"> -->
+        <div>
+            <h1>Accessify</h1>
+            <p>Enabling Web Accessibility for Low-Bandwidth Inputs</p>
+        </div>
+    </section>
+    <section>
+        <h2>What is Accessify?</h2>
+        <p>Press the <strong>tab</strong> button on your keyboard.</p>
+        <div class="example">
+            <p>You'll notice that <a id="anchor1" href='#anchor1'>this text</a> will get outlined.</p>
+        </div>
+        <p>Congratulations! You've discovered a standard accessibility feature of web browsers: you can navigate between interactable items in any webpage solely with keyboard inputs.
+        <p>Additional keyboard shortcuts include:</p>
+        <ul>
+            <li><strong>Shift + Tab:</strong> Go back.</li>
+            <li><strong>Arrow Up / Down:</strong> Scroll OR move between grouped items.</li>
+            <li><strong>Enter / Space:</strong> Select an interactable item.</li>
+        </ul>
+        <div class="example">
+            <fieldset>
+                <legend>Output format</legend>
+                  <div>
+                    <input type="radio" name="format" id="1" value="1" checked>
+                    <label for="1">Option #1</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="format" id="2" value="2">
+                    <label for="2">Option #2</label>
+                  </div>
+                </fieldset>
+        </div>
+        <h3>The Problem</h3>
+        <p>While this navigation scheme is effective for many circumstances, it fails individuals with only a few possible inputs, such as a single switch.</p>
+        
+        <h3>Our Solution</h3>
+        <p>Accessify is a tool to enable people with low-bandwidth inputs (e.g. switches, etc.) to control web browsers with faster speeds.</p>
+        <p>Using the browser as our develoment platform, we have the following benefits:</p>
+        <ul>
+            <li><strong>Written in JavaScript:</strong> Accessible to millions of developers.</li>
+            <li><strong>Universal Design:</strong> Our libraries can run client and server-side (e.g. made available through a cloud API).</li>
+            <li><strong>Simple Application Distribution:</strong> Anything developed alongiside our tools will have a streamlined distribution pipeline through the Web.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>How to Use Accessify?</h2>
+        <p>Coming soon...</p>
+    </section>
+    <footer>Brains@Play 2022</footer>
+</body>
+</html>

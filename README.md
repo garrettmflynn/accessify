@@ -1,6 +1,8 @@
 # accessify
 Web accessibility for low-bandwidth inputs
 
+> **Note:** We have published a proof-of-concept website at https://brainsatplay.com/accessify (index.html in this repo) that ginteractively demonstrates the value proposition of this library. Check it out!
+
 ## Introduction
 ### Goal
 Implement a fully on-browser web navigation system for low-bandwidth inputs (e.g. BCIs).
@@ -55,6 +57,7 @@ Virtual mouse
 1. **erd / ers:** Basic Event-Related (De)Synchronization (i.e. motor imagery) Detection
 
 ## Roadmap
+0. Write an explanatory article that also can serve as a proof-of-concept (June 1st, 2022)
 1. Plug in Webgazer to detect where the user is looking on the screen.
 2. Implement Filter Bank Canonical Correlation Analysis (FBCCA) in **hightime**
 3. Test FBCCA algorithm on a single flashing stimulus
